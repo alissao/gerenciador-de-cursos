@@ -31,10 +31,15 @@ public class TestaCursoComAluno {
             System.out.println(aluno);
         });
 
-        Set<Aluno> alunos = javaColecoes.getAlunos();
+        System.out.println("O aluno" + a1 + " está matriculado?");
+        System.out.println(javaColecoes.estaMatriculado(a1));
+
+//        Set<Aluno> alunos = javaColecoes.getAlunos();
 
 //        alunos.add(a4);
 //        System.out.println(alunos.size());
+
+
 
     }
 
