@@ -1,4 +1,4 @@
-package com.cotefacil2;
+package com.cotefacil2.modelos;
 
 import java.util.*;
 
@@ -8,6 +8,7 @@ public class Curso {
     private String instrutor;
     private List<Aula> aulas = new ArrayList<Aula>();
     private Set<Aluno> alunos = new HashSet<>();
+    private Map<Integer, Aluno> matriculaParaAluno = new HashMap<>();
 
     public Curso(String nome, String instrutor) {
         this.nome = nome;
@@ -32,6 +33,7 @@ public class Curso {
 
     public void matricula(Aluno aluno) {
         this.alunos.add(aluno);
+        this.matriculaParaAluno.put(aluno.getNumeroMatricula(), aluno);
     }
 
     public int getTempoTotal() {
@@ -58,6 +60,16 @@ public class Curso {
 
     public boolean estaMatriculado(Aluno aluno) {
         return this.alunos.contains(aluno);
+    }
+
+    public Aluno buscaMatriculado (int numero) {
+        for (Aluno aluno : alunos) {
+            if (aluno.getNumeroMatricula() == numero) {
+                return aluno;
+            }
+        }
+        throw new NoSuchElementException("Matricula " + numero
+                + " não encontrada");
     }
 
 }

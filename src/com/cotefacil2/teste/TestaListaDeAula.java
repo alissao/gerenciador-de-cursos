@@ -1,7 +1,8 @@
-package com.cotefacil2;
+package com.cotefacil2.teste;
+
+import com.cotefacil2.modelos.Aula;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 
 public class TestaListaDeAula {

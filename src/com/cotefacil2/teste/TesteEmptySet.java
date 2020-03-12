@@ -1,4 +1,4 @@
-package com.cotefacil2;
+package com.cotefacil2.teste;
 
 import java.util.Collections;
 import java.util.Set;

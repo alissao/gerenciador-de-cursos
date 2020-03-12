@@ -1,5 +1,10 @@
-package com.cotefacil2;
+package com.cotefacil2.teste;
 
+import com.cotefacil2.modelos.Aluno;
+import com.cotefacil2.modelos.Aula;
+import com.cotefacil2.modelos.Curso;
+
+import java.util.Iterator;
 import java.util.Set;
 
 public class TestaCursoComAluno {
@@ -38,6 +43,18 @@ public class TestaCursoComAluno {
 
 //        alunos.add(a4);
 //        System.out.println(alunos.size());
+
+        System.out.println("Todos os alunos matriculados:");
+        Set<Aluno> alunos = javaColecoes.getAlunos();
+        Iterator<Aluno> iterador = alunos.iterator();
+        while (iterador.hasNext()) {
+            Aluno proximo = iterador.next();
+            System.out.println(proximo);
+        }
+
+        //Vector existe mais em códigos legados e é thread-safe.
+        //Mesmo assim, não é recomendado se utilizar Vectors hj em dia.
+//        Vector<Aluno> vetor = new Vector<>();
 
 
 

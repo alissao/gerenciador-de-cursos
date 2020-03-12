@@ -1,4 +1,4 @@
-package com.cotefacil2;
+package com.cotefacil2.teste;
 
 import java.util.HashSet;
 import java.util.Set;

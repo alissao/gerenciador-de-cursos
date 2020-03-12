@@ -1,4 +1,4 @@
-package com.cotefacil2;
+package com.cotefacil2.modelos;
 
 public class Aula implements Comparable<Aula> {
 

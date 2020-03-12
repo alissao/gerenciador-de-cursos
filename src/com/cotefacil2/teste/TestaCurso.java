@@ -1,6 +1,7 @@
-package com.cotefacil2;
+package com.cotefacil2.teste;
 
-import java.util.List;
+import com.cotefacil2.modelos.Aula;
+import com.cotefacil2.modelos.Curso;
 
 public class TestaCurso {
 
